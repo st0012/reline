@@ -683,6 +683,7 @@ class Reline::LineEditor
       dialog.trap_key = nil
       return
     end
+    raise
     old_dialog = dialog.clone
     dialog.contents = dialog_render_info.contents
     pointer = dialog.pointer
